@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
-<title>Title</title>
+<title>Social Mutualism</title>
 <script>
+
 function toggleSect(sect)
 {
 	var sib = sect.nextElementSibling;
@@ -18,15 +20,18 @@ function toggleSect(sect)
 		sect.className="sectclosed";
 	}
 }
-
-fetch('contents.txt')
-  .then(response => response.text())
-  .then((data) => {
-	document.getElementById("0name").innerHTML = data.split('\n')[0];
-	document.getElementById("0txt").src = data.split('\n')[1];
-})
 </script>
 <style>
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
+body
+{
+	background-color: #fab380;
+}
+
 header
 {
 	text-align: center;
@@ -43,7 +48,7 @@ header
     user-select: none; /* Chrome, Edge, Opera and Firefox */
 	margin: 1% 7%;
 	box-shadow: 0pt 2pt 0pt 0 black;
-	width: 95%;
+	width: 86%;
 }
 
 .sectclosed::after
@@ -104,33 +109,213 @@ embed
 </style>
 </head>
 <body>
-	<header id="part0">
-		<h1 id="0name">get 0 folder name</h1>
-		<embed id="0txt" type="text/html" src=""> <!-- embed, iframe, object -->
-		<img src="0 Bio/0.png" width="100">
+	<header id="overview">
+		<h1>Social Mutualism</h1>
+		<img src="../0 Social Mutualism/Social Mutualism logo.png" width="100">
 	</header>
-	<article id="part1">
-		<h2 onclick="toggleSect(this)" class="sectclosed">1 Intro</h2>
+	<article id="part0">
+		<h2 onclick="toggleSect(this)" class="sectclosed">0 Intro</h2>
 		<div class="closed">
-			<embed id="0txt" type="text/html" src="0 Bio/0.txt">
+			<p>Influenced by:</p>
+			<p>Mutualism, Pirate Politics, Experimentalism, Gradualism,</p>
+			<p>Participatory democracy, Welfarism, Labor rights, Libertarian Socialism, Vikiism.</p>
+			<br>
+			<p>"Expand democracy even in the workplace!"</p>
+			<br>
+			<p>Social Mutualism ia a leftist libertarian ideology that advocates for:</p>
+			<p>- More government transparency, (less government regulation) and simplifying hierarchical structures.</p>
+			<p>- More local decision-making and decentralization with more direct democracy. (state laws)</p>
+			<p>- Socialist goals can be achieved via workplace reforms, participatory democracy and more freedoms from the state.</p>
+			<p>- Give everyone shelter, food, healthcare and education, if you want more/better you work. UBI 'nuf said.</p>
+			<p>- Let workers vote on business matters via workplace democracy.</p>
 			<div id="1.1">
-				<h2 onclick="toggleSect(this)" class="sectclosed">1.1 Intro continuation</h2>
+				<h2 onclick="toggleSect(this)" class="sectclosed">0.1 What should we do?</h2>
 				<div class="closed">
-					<embed id="1txt" type="text/html" src="0 Bio/0.txt">
+					<p>1. UBI.</p>
+					<p>2. push for more government transparency.</p>
+					<p>3. start using alternative voting methods (ranking or grading). <a href="https://plato.stanford.edu/entries/voting-methods/" target="_blank">(more info on plato.stanford.edu/entries/voting-methods)</a></p>
+					<p>3.1 call for the government to take citizens' initiatives more seriously.</p>
+					<p>4. scale down the government and justice system.</p>
+					<p>4.1 start from easiest: UBI, drug laws.</p>
+					<p>4.2 then onto more harder stuff: IP-laws, patents, direct/liquid democracy.</p>
+					<p>5. let people allocate (part of) where their taxes go?</p>
 				</div>
 			</div>
 		</div>
 	</article>
-	<article id="part2">
-		<h2 onclick="toggleSect(this)" class="sectclosed">2 Likes</h2>
+	<article id="part1">
+		<h2 onclick="toggleSect(this)" class="sectclosed">1 Government</h2>
 		<div class="closed">
-			<embed id="2txt" type="text/html" src="0 Bio/0.txt">
+			<p>List of things to be added:</p>
+			<p>1.1 Participation:</p>
+			<p>1.1.1 liquid democracy</p>
+			<p>1.2 Freedom of information:</p>
+			<p>1.2.1 Transparency in government</p>
+			<p>1.3 Army</p>
+		</div>
+	</article>
+	<article id="part2">
+		<h2 onclick="toggleSect(this)" class="sectclosed">2 Privacy and personal freedoms</h2>
+		<div class="closed">
+			<div id="2.1">
+				<h2 onclick="toggleSect(this)" class="sectclosed">2.1 Individual freedoms</h2>
+				<div class="closed">
+					<p>Freedoms should be restricted only when it is necessary to protect the freedoms and rights of others.</p>
+					<p>Individual freedoms include the right to self-determination even when it could harm the person's own well being.</p>
+					<p>Steps should be taken towards reducing bureaucracy and government control to grant people more freedom in their lives.</p>
+				</div>
+			</div>
+			<div id="2.2">
+				<h2 onclick="toggleSect(this)" class="sectclosed">2.2 Freedom of speech</h2>
+				<div class="closed">
+					<p>freedom of speech, even unpopular speech should be allowed,</p>
+					<p>as long as it doesn't violate the liberties of others.</p>
+					<p>Individual services may limit these rights, as they are private services.</p>
+				</div>
+			</div>
+			<div id="2.3">
+				<h2 onclick="toggleSect(this)" class="sectclosed">2.3 Individuals right to privacy</h2>
+				<div class="closed">
+					<p>Violations of privacy include for example intrusion into thoughts, opinions, beliefs, relationships and ways of life of others.</p>
+					<p>Even the smallest restrictions on privacy protection must be very well justified.</p>
+					<p>State surveillance of citizens inevitably leads to abuses, and there is no basis for it in a free society.</p>
+				</div>
+			</div>
+			<div id="2.4">
+				<h2 onclick="toggleSect(this)" class="sectclosed">2.4 Equality of legal protection</h2>
+				<div class="closed">
+					<p>Everyone should have a way of representing in court via an attourney.</p>
+					<p>* To be updated *</p>
+				</div>
+			</div>
 		</div>
 	</article>
 	<article id="part3">
-		<h2 onclick="toggleSect(this)" class="sectclosed">3 Dislikes</h2>
+		<h2 onclick="toggleSect(this)" class="sectclosed">3 Economics</h2>
 		<div class="closed">
-			<embed id="3txt" type="text/html" src="0 Bio/0.txt">
+			<h2 onclick="toggleSect(this)" class="sectclosed">3.1 Taxation</h2>
+			<div class="closed">
+				<h2 onclick="toggleSect(this)" class="sectclosed">3.1.1 Allocation of taxes</h2>
+				<div class="closed">
+					<p>There could be a system to allocate where part of your taxes go, as not to fund programs you don't agree with.</p>
+					<p>It could be handled on the national tax website (Vero.fi in Finland) as you pay your taxes you can either use the government recommended allocation of your tax money,</p>
+					<p>or customize it to your own liking to send a message to the government to focus more on specific parts of policy</p>
+					<p><a href="https://www.veronmaksajat.fi/luvut/Tilastot/Verotuotot/">Finnish government tax income (in Finnish)</a></p>
+					<p><a href="https://www.veronmaksajat.fi/luvut/Tilastot/Julkiset-menot/Veroeurojen-kaytto/">List of finnish government services funded by taxes (in Finnish)</a></p>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article id="part4">
+		<h2 onclick="toggleSect(this)" class="sectclosed">4 Equality</h2>
+		<div class="closed">
+			<p>Uhh why is this empty... gotta fix that.</p>
+			<p>Basically i hate everyone including myself equally.</p>
+		</div>
+	</article>
+	<article id="part5">
+		<h2 onclick="toggleSect(this)" class="sectclosed">5 Rights</h2>
+		<div class="closed">
+			<div id="5.1">
+				<h2 onclick="toggleSect(this)" class="sectclosed">5.1 Access to information</h2>
+				<div class="closed">
+					<p>Education and information should be freely available for those interested in learning about anything.</p>
+				</div>
+			</div>
+		</div>
+		<div class="closed">
+			<div id="5.2">
+				<h2 onclick="toggleSect(this)" class="sectclosed">5.2 Copyright reform</h2>
+				<div class="closed">
+					<p>Why you need to get profit from 70+ years old content that could instead be reused and remixed into more value?</p>
+					<p>bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh bruh</p>
+					<p>I propose content to be released into the public domain 30-40 years from creation date.</p>
+				</div>
+			</div>
+		</div>
+		<div class="closed">
+			<div id="5.2">
+				<h2 onclick="toggleSect(this)" class="sectclosed">5.3 Digitalization</h2>
+				<div class="closed">
+					<p>Empty</p>
+					<p>something about empowering peoples rights via digital services</p>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article id="part6">
+		<h2 onclick="toggleSect(this)" class="sectclosed">6 Safety</h2>
+		<div class="closed">
+			<h2 onclick="toggleSect(this)" class="sectclosed">6.1 Anti-terrorism</h2>
+			<div class="closed">
+				<p>Breaking individuals privacy (as stated in section 2.3) as a means of preventing terrorism is not effective.</p>
+				<p>*write more stuff about good alternatives here*</p>
+			</div>
+			<h2 onclick="toggleSect(this)" class="sectclosed">6.2 Police and fire department</h2>
+			<div class="closed">
+				<p>The police force and fire department should be organized at a local level, having a changing board of directors to ensure public benefit.</p>
+			</div>
+			<h2 onclick="toggleSect(this)" class="sectclosed">6.3 Gun control</h2>
+			<div class="closed">
+				<p>1The current gun control in Finland is sufficient,</p>
+				<p>we should allow individuals to bear arms for recreational and/or wildlife hunting use,</p>
+				<p>with strong background checks and misuse reporting system.</p>
+			</div>
+			<h2 onclick="toggleSect(this)" class="sectclosed">6.4 Traffic</h2>
+			<div class="closed">
+				<p>Empty</p>
+				<p>Probably something about personal risks, no surveillance</p>
+			</div>
+		</div>
+	</article>
+	<article id="part7">
+		<h2 onclick="toggleSect(this)" class="sectclosed">7 Social Systems</h2>
+		<div class="closed">
+			<h2 onclick="toggleSect(this)" class="sectclosed">7.1 Basic income</h2>
+			<div class="closed">
+				<p>Universal basic income is a requirement heading into the future of automation and personal freedoms.</p>
+			</div>
+			<h2 onclick="toggleSect(this)" class="sectclosed">7.2 Healthcare</h2>
+			<div class="closed">
+				<p>free healthcare is a human right.</p>
+			</div>
+			<h2 onclick="toggleSect(this)" class="sectclosed">7.3 Drug abuse</h2>
+			<div class="closed">
+				<p>Drug problems should be taken care of by healthcare systems as treatment of addiction, rather than punishing all drug users by arresting them.</p>
+				<p>We should setup drug use rooms where a doctor or similarily specialized personnel overlook a clients use of drugs and recommend possible paths of care for drug problems.</p>
+			</div>
+		</div>
+	</article>
+	<article id="part8">
+		<h2 onclick="toggleSect(this)" class="sectclosed">8 Employment and education</h2>
+		<div class="closed">
+			<p>Work in progress...</p>
+			<p>Something about expanding workplace democracy and work training</p>
+		</div>
+	</article>
+	<article id="part9">
+		<h2 onclick="toggleSect(this)" class="sectclosed">9 Energy and climate</h2>
+		<div class="closed">
+			<h2 onclick="toggleSect(this)" class="sectclosed">9.1 Nuclear and renewable energy</h2>
+			<div class="closed">
+				<p>Prioritize nuclear power until renewable technology improves to the point it outputs all the energy needed.</p>
+				<p>Nuclear power isn't fool proof but it harms way less people than the dinosaur fuels.</p>
+				<p>Individuals should not be scape goated into making "greener" decisions.</p>
+			</div>
+			<h2 onclick="toggleSect(this)" class="sectclosed">9.2 Protect nature</h2>
+			<div class="closed">
+				<p>Yea idk why i put this section here.</p>
+				<p>Will add something later.</p>
+			</div>
+		</div>
+	</article>
+	<article id="part10">
+		<h2 onclick="toggleSect(this)" class="sectclosed">10 Other</h2>
+		<div class="closed">
+			<h2 onclick="toggleSect(this)" class="sectclosed">10.1 Historical Monuments</h2>
+			<div class="closed">
+				<p>If a majority of citizens vote against having historical monument displayed publically the monument should be moved to a museum, not be destroyed.</p>
+			</div>
 		</div>
 	</article>
 </body>
