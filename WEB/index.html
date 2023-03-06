@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title>Title</title>
+<script>
+function toggleSect(sect)
+{
+	var sib = sect.nextElementSibling;
+	if(sib.className=="closed")
+	{
+		sib.className="open";
+		sect.className="sectopen";
+	}
+	else
+	{
+		sib.className="closed";
+		sect.className="sectclosed";
+	}
+}
+
+fetch('contents.txt')
+  .then(response => response.text())
+  .then((data) => {
+	document.getElementById("0name").innerHTML = data.split('\n')[0];
+	document.getElementById("0txt").src = data.split('\n')[1];
+})
+</script>
+<style>
+header
+{
+	text-align: center;
+}
+
+.sectclosed
+{
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Chrome, Edge, Opera and Firefox */
+	margin: 1% 7%;
+	box-shadow: 0pt 2pt 0pt 0 black;
+	width: 95%;
+}
+
+.sectclosed::after
+{
+	content: " ➕";
+}
+
+.sectopen
+{
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Chrome, Edge, Opera and Firefox */
+	margin: 1% 7%;
+	box-shadow: 0pt 2pt 0pt 0 black;
+}
+
+.sectopen::after
+{
+	content: " ➖";
+}
+
+.closed
+{
+	visibility: hidden;
+	display: none;
+}
+
+.open
+{
+	visibility: visible;
+	display: block;
+	margin: 0% 7%;
+	padding: 10px;
+	width: 80%;
+	clear: left;
+}
+
+embed
+{
+	width: 90%;
+	height: 10%;
+}
+
+#0txt
+{
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<header id="part0">
+		<h1 id="0name">get 0 folder name</h1>
+		<embed id="0txt" type="text/html" src=""> <!-- embed, iframe, object -->
+		<img src="0 Bio/0.png" width="100">
+	</header>
+	<article id="part1">
+		<h2 onclick="toggleSect(this)" class="sectclosed">1 Intro</h2>
+		<div class="closed">
+			<embed id="0txt" type="text/html" src="0 Bio/0.txt">
+			<div id="1.1">
+				<h2 onclick="toggleSect(this)" class="sectclosed">1.1 Intro continuation</h2>
+				<div class="closed">
+					<embed id="1txt" type="text/html" src="0 Bio/0.txt">
+				</div>
+			</div>
+		</div>
+	</article>
+	<article id="part2">
+		<h2 onclick="toggleSect(this)" class="sectclosed">2 Likes</h2>
+		<div class="closed">
+			<embed id="2txt" type="text/html" src="0 Bio/0.txt">
+		</div>
+	</article>
+	<article id="part3">
+		<h2 onclick="toggleSect(this)" class="sectclosed">3 Dislikes</h2>
+		<div class="closed">
+			<embed id="3txt" type="text/html" src="0 Bio/0.txt">
+		</div>
+	</article>
+</body>
+</html>
