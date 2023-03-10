@@ -1,116 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<meta content="utf-8" http-equiv="encoding">
-	<title>Social Mutualism</title>
-	<link rel="icon" type="image/x-icon" href="icon.png">
-	<script>
-	function toggleSect(sect)
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title>Social Mutualism</title>
+<link rel="icon" type="image/x-icon" href="icon.png">
+<script>
+function toggleSect(sect)
+{
+	var sib = sect.nextElementSibling;
+	if(sib.className=="closed")
 	{
-		var sib = sect.nextElementSibling;
-		var icon = sect.querySelector('.sectI');
-		if(sib.className=="closed")
-		{
-			sib.className="open";
-			icon.src="minus.png"
-		}
-		else
-		{
-			sib.className="closed";
-			icon.src="plus.png"
-		}
+		sib.className="open";
 	}
-	</script>
-	<link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
-	<style>
-	html {
-		overflow: -moz-scrollbars-vertical; 
-		overflow-y: scroll;
+	else
+	{
+		sib.className="closed";
 	}
+}
+</script>
+<link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+<style>
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
 
-	body
-	{
-		font-family: 'Anonymous Pro';
-		background: rgb(255,94,94);
-		background: -moz-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background: -webkit-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background: linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background-attachment: fixed;
-	}
-	
-	h1
-	{
-		font-size: 5vmin;
-	}
-	
-	h2
-	{
-		font-size: 3.5vmin;
-	}
-	
-	p
-	{
-		font-size: 2.5vmin;
-	}
-	
-	p1
-	{
-		font-size: 2.2vmin;
-	}
+body
+{
+	font-family: 'Anonymous Pro';
+	background: rgb(255,94,94);
+	background: -moz-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
+	background: -webkit-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
+	background: linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
+	background-attachment: fixed;
+}
 
-	header
-	{
-		text-align: center;
-	}
+header
+{
+	text-align: center;
+}
 
-	.sect
-	{
-		cursor: pointer;
-		-webkit-touch-callout: none; /* iOS Safari */
-		-webkit-user-select: none; /* Safari */
-		-khtml-user-select: none; /* Konqueror HTML */
-		-moz-user-select: none; /* Old versions of Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-		user-select: none; /* Chrome, Edge, Opera and Firefox */
-		margin: 1% 7%;
-		box-shadow: 0pt 3pt 0pt 0 black;
-		width: 86%;
-	}
+.sect
+{
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Chrome, Edge, Opera and Firefox */
+	margin: 1% 7%;
+	box-shadow: 0pt 3pt 0pt 0 black;
+	width: 86%;
+}
 
-	.closed
-	{
-		visibility: hidden;
-		display: none;
-	}
+.sectclosed::after
+{
+	//content: " ➕";
+}
 
-	.open
-	{
-		visibility: visible;
-		display: block;
-		margin: 0% 7%;
-		padding: 10px;
-		width: 80%;
-		clear: left;
-	}
+.sectopen::after
+{
+	//content: " ➖";
+}
 
-	embed
-	{
-		width: 90%;
-		height: 10%;
-	}
+.closed
+{
+	visibility: hidden;
+	display: none;
+}
 
-	#0txt
-	{
-	  display: block;
-	  font-size: 1.17em;
-	  margin-top: 1em;
-	  margin-bottom: 1em;
-	  margin-left: 0;
-	  margin-right: 0;
-	  font-weight: bold;
-	}
-	</style>
+.open
+{
+	visibility: visible;
+	display: block;
+	margin: 0% 7%;
+	padding: 10px;
+	width: 80%;
+	clear: left;
+}
+
+embed
+{
+	width: 90%;
+	height: 10%;
+}
+
+#0txt
+{
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
 	<header id="overview">
@@ -121,9 +108,9 @@
 	<article id="part0">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">0 Intro</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
@@ -138,15 +125,15 @@
 			<div id="0.1">
 				<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 						<th style="width:71%"><h2 style="text-align: left">0.1 What should we do?</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+						<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 					</tr>
 				</table>
 				<div class="closed">
 					<p>1. UBI.<br>
 					2. push for more government transparency.<br>
-					3. start using alternative voting methods (ranking or grading). <a href="https://plato.stanford.edu/entries/voting-methods/" target="_blank">(more info at plato.stanford.edu)</a><br>
+					3. start using alternative voting methods (ranking or grading). <a href="https://plato.stanford.edu/entries/voting-methods/" target="_blank">(more info on plato.stanford.edu)</a><br>
 					3.1 call for the government to take citizens' initiatives more seriously.<br>
 					4. scale down the government and justice system.<br>
 					4.1 start from easiest: UBI, drug laws.<br>
@@ -157,79 +144,44 @@
 		</div>
 	</article>
 	<article id="part1">
-		<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">1 Government</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
-			<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:71%"><h2 style="text-align: left">1.1 Participation</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
-				</tr>
-			</table>
-			<div class="closed">
-				<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:71%"><h2 style="text-align: left">1.1.1 Liquid democracy</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
-					</tr>
-				</table>
-				<div class="closed">
-					<p>More effort should be put into researching the possibility of liquid democracy and how to put it in use.<br>
-					One example could be to use the Citizens Initiative website where people could either vote directly or allocate their vote to another person.</p>
-				</div>
-				<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:71%"><h2 style="text-align: left">1.1.2 Voting</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
-					</tr>
-				</table>
-				<div class="closed">
-					<p>As with liquid democracy we should research alternative voting methods and how to put them to use.<br>
-					<a href="https://plato.stanford.edu/entries/voting-methods/" target="_blank">more info at plato.stanford.edu</a></p>
-				</div>
-			</div>
-			<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:71%"><h2 style="text-align: left">1.3 Army</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
-				</tr>
-			</table>
-			<div class="closed">
-				<p>The state must either make army conscription optional or make conscription mandatory to everyone regardless of their gender identity.</p>
-			</div>
+			<p>List of things to be added:</p>
+			<p>1.1 Participation:<br>
+			1.1.1 liquid democracy<br>
+			1.2 Freedom of information:<br>
+			1.2.1 Transparency in government<br>
+			1.3 Army</p>
 		</div>
 	</article>
 	<article id="part2">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">2 Economics</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 						<th style="width:71%"><h2 style="text-align: left">2.1 Taxation</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+						<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 					</tr>
 			</table>
 			<div class="closed">
 				<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 						<th style="width:71%"><h2 style="text-align: left">2.1.1 Allocation of taxes</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+						<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -241,9 +193,9 @@
 				</div>
 				<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 						<th style="width:71%"><h2 style="text-align: left">2.1.2 Taxable sources</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+						<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -255,9 +207,9 @@
 				</div>
 				<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 						<th style="width:71%"><h2 style="text-align: left">2.1.3 On taxation is theft</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+						<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -269,9 +221,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 					<tr style="border: 1px; height:1vw;" style="width:98%">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 						<th style="width:71%"><h2 style="text-align: left">2.2 Freedoms of the market</h2></th>
-						<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+						<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 					</tr>
 			</table>
 			<div class="closed">
@@ -282,17 +234,17 @@
 	<article id="part3">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">3 Privacy and personal freedoms</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">3.1 Individual freedoms</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -302,9 +254,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">3.2 Freedom of speech</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -314,9 +266,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">3.3 Individuals right to privacy</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -326,9 +278,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">3.4 Equality of legal protection</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -340,50 +292,40 @@
 	<article id="part4">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">4 Equality</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
-			<p>Social Mutualists believe in radical equality where everyone is treated fairly when it comes to:<br>
-			gender, age, origin, citizenship, language, religion, belief, opinion, political activity, trade union activity,<br>
-			family relationships, health condition, disability, sexual orientation or other reason related to the person.</p>
-			<p>The state...<br>
-			- Must operate so that it respects all biological genders and the diversity of gender identity.<br>
-			- Does not need to know an individual's gender and thusly it should be removed from citizens IDs.<br>
-			- Must either make army conscription optional or make conscription mandatory to everyone regardless of their gender.<br>
-			- Give parental leave equally to both/all parental guardians.<br>
-			- Must not give preferential treatment to certain religions.</p>
+			<p>Uhh why is this empty... gotta fix that.</p>
+			<p>Basically i hate everyone including myself equally.</p>
 		</div>
 	</article>
 	<article id="part5">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">5 Rights</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">5.1 Access to information</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
-				<p>Education and information should be freely available for those interested in learning about anything.<br>
-				Scientific research produced with tax funds must be accessible to taxpayers.<br>
-				We must dismantle the structures that lead to paying first for research, then for publishing it, and finally for reading it.<br>
-				The money that is now directed to publishing platforms could be used for research.</p>
+				<p>Education and information should be freely available for those interested in learning about anything.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">5.2 Copyright reform</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -393,9 +335,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">5.3 Digitalization</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -407,17 +349,17 @@
 	<article id="part6">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">6 Safety</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">6.1 Anti-terrorism</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -426,9 +368,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">6.2 Police and fire department</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 			</table>
 			<div class="closed">
@@ -436,9 +378,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">6.3 Gun control</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -448,9 +390,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">6.4 Traffic</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -462,17 +404,17 @@
 	<article id="part7">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">7 Social systems</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">7.1 Basic income</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -480,9 +422,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">7.2 Healthcare</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -490,9 +432,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">7.3 Drug abuse</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -504,9 +446,9 @@
 	<article id="part8">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">8 Employment and education</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
@@ -517,17 +459,17 @@
 	<article id="part9">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">9 Energy and climate</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">9,1 Nuclear and renewable energy</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -537,9 +479,9 @@
 			</div>
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">9.2 Protect nature</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -551,17 +493,17 @@
 	<article id="part10">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 			<tr style="border: 1px; height:1vw;" style="width:98%">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 				<th style="width:71%"><h2 style="text-align: left">10 Other</h2></th>
-				<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+				<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
 				<tr style="border: 1px; height:1vw;" style="width:98%">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:4%"><img class="sectIcon" width="25vw" src="plus.png"></img></th>
 					<th style="width:71%"><h2 style="text-align: left">10.1 Historical monuments</h2></th>
-					<th style="width:20%"><p1 style="text-align: center">&#x2714; 10.03.2023</p1></th>
+					<th style="width:25%"><p style="text-align: center">date modified: 10.03.2023</p></th>
 				</tr>
 			</table>
 			<div class="closed">
