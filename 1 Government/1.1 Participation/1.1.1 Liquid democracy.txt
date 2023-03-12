@@ -1,2 +1,7 @@
 More effort should be put into researching the possibility of liquid democracy and how to put it in use.
 One example could be to use the Citizens Initiative website where people could either vote directly or allocate their vote to another person.
+
+What is it?
+Liquid democracy is a form of democracy where every person has a vote in decisions, they can either give their vote directly on decisions or give their vote to another person/party.
+
+Liquid Democracy in 60 Seconds: https://www.youtube.com/watch?v=Ya1dNNzkQTE
