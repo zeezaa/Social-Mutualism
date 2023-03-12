@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>Social Mutualism</title>
+	<link rel="icon" type="image/x-icon" href="icon.png">
+	<script>
+	function toggleSect(sect)
+	{
+		var sib = sect.nextElementSibling;
+		var icon = sect.querySelector('.sectI');
+		if(sib.className=="closed")
+		{
+			sib.className="open";
+			icon.src="minus.png"
+		}
+		else
+		{
+			sib.className="closed";
+			icon.src="plus.png"
+		}
+	}
+	</script>
+	<link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+	<style>
+	html
+	{
+		overflow: -moz-scrollbars-vertical; 
+		overflow-y: scroll;
+	}
+
+	body
+	{
+		font-family: 'Anonymous Pro';
+		background: rgb(255,94,94);
+		background: -moz-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
+		background: -webkit-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
+		background: linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
+		background-attachment: fixed;
+	}
+	
+	h1
+	{
+		font-size: 3vh;
+	}
+	
+	h2
+	{
+		font-size: 1.9vh;
+	}
+	
+	p
+	{
+		font-size: 1.8vh;
+	}
+	
+	#languages
+	{
+		position: fixed;
+	}
+
+	header
+	{
+		text-align: center;
+	}
+
+	.sect
+	{
+		cursor: pointer;
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Chrome, Edge, Opera and Firefox */
+		margin: 0.5% 7%;
+		box-shadow: 0pt 3pt 0pt 0 black;
+		width: 86%;
+	}
+	
+	.inner
+	{
+		cursor: pointer;
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Chrome, Edge, Opera and Firefox */
+		margin: 0.5% 1%;
+		box-shadow: 0pt 3pt 0pt 0 black;
+		width: 100%;
+	}
+
+	.closed
+	{
+		visibility: hidden;
+		display: none;
+	}
+
+	.open
+	{
+		visibility: visible;
+		display: block;
+		margin: 0% 7%;
+		padding: 10px;
+		width: 84.5%;
+		clear: left;
+	}
+
+	embed
+	{
+		width: 90%;
+		height: 10%;
+	}
+
+	#0txt
+	{
+	  display: block;
+	  font-size: 1.17em;
+	  margin-top: 1em;
+	  margin-bottom: 1em;
+	  margin-left: 0;
+	  margin-right: 0;
+	  font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<div id="languages">
+		<h2>
+		<a href="index.html">EN</a>
+		<a href="suomi.html">FI</a>
+		</h2>
+	</div>
+	<header id="overview">
+		<h1>Sosiaali Mutualismi</h1>
+		<img src="icon.png" width="150vmin">
+		<h2>"Laajennetaan demokratiaa jopa työpaikoilla!"</h2>
+	</header>
+	<article id="part0">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">0 Intro</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<p>Sosiaali Mutualismi on työväenliikkeen poliittinen ja taloudellinen aate joka kannattaa lisää hallinnon avoimuutta (vähemmän valtion sääntelyä) ja hierarkkisten rakenteiden yksinkertaistamista.<br>
+			Lisää paikallista päätöksentekoa ja hallinnon hajauttamista suoran demokratian kera. (maakuntalakeja)<br>
+			Sosialistiset tavoitteet voidaan saavuttaa työpaikkauudistuksilla, osallistavalla demokratialla ja lisäämällä vapautta valtiosta.<br>
+			Annetaan jokaiselle suojaa, ruokaa, terveydenhuoltoa ja koulutusta, jos haluat enemmän/parempaa tee töitä. Perustulo tarpeeksi sanottu.<br>
+			Annetaan työntekijöiden äänestää bisnesasioista työpaikkademokratian kautta.</p>
+			<p>Sosiaali Mutualismiin on vaikuttanut mm.:<br>Mutualismi, Piraattiliike, Eksperimentalismi, Gradualismi,<br>Osallistava demokratia, Hyvinvointi, Työväenliike, Libertaarinen sosialismi, Vikiismi.</p>
+			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">0.1 Mitä kuuluisi tehdä?</h2></th>
+					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>1. Perustulo.<br>
+				2. Ajetaan lisää hallinnon avoimuutta.<br>
+				3. Aloitetaan vaihtoehtoisten vaalitapojen käyttö (Painotettu vaalitapa tai Hyväksymisvaalitapa).<br>
+				3.1 vaaditaan hallitusta suhtautumaan kansalaisaloitteisiin vakavammin.<br>
+				4. pienennetään hallintoa ja oikeusjärjestelmää.<br>
+				4.1 Aloitetaan helpoimmasta: perustulo, huumelainsäädäntö.<br>
+				4.2 sitten vaikeampiin asioihin: IP-lait, patentit, suora/likvidi demokratia.<br>
+				5. annetaan ihmisten jaotella minne (osa) veroistaan menee?</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">0.2 Ideologies</h2></th>
+					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Mutualismi ja piraattiliike ovat sosiaalisen mutualismin ideologian tärkeimpiä inspiraatioita.</p>
+				<h2>Mitä on mutualismi?</h2>
+				<p>Mutualismi on työväenliikkeen poliittinen ja taloudellinen aate, joka usein liitetään anarkisti Pierre-Joseph Proudhoniin.<br>
+				Pääpiirteiltään mutualismi ajaa työarvoteoriaa, jonka mukaan tuottajan kuuluu saada työn tuotteesta täysi työn määrää vastaava korvaus, muuta pidetään riistona.<br>
+				Hyvin anarkistisena ideologiana se myös kannattaa enemmän alhaalta ylöspäin suuntautuvaa päätöksentekoa ylhäältä alaspäin sijasta.</p>
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JUUEHv8GHcE?start=77&clip=Ugkxp3Uk8P-EGkveA8pqjZBiwPgNGWdEVH-7&clipt=EPDUBBj3jgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<p><a href="https://fi.wikipedia.org/wiki/Mutualismi">Mutualismista Wikipediassa</a></p>
+				<h2>Mikä on piraattiliike?</h2>
+				<p>Piraattiliike tulee Piraattipuolueilta (maailmanlaajuinen puolueiden omistama kutsumanimi), joka luotiin protesti puolueeksi Pirate Bayn oikeidenkäynnin ohella.<br>
+				Nykyään piraattipuolueet ovat laajentuneet kansalaisvapauksien, osallistavan demokratian, yksityisyyden ja internetin vapauksien teemoille.</p>
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H9pbHn8vaA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<p><a href="https://fi.wikipedia.org/wiki/Piraattipuolue">Piraattipuolueesta Wikipediassa</a></p>
+			</div>
+		</div>
+	</article>
+	<article id="part1">
+		<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">1 Hallinto</h2></th>
+				<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">1.1 Osallisuus</h2></th>
+					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+					<tr style="height:1vw">
+						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:91%"><h2 style="text-align: left">1.1.1 Likvidi demokratia</h2></th>
+						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					</tr>
+				</table>
+				<div class="closed">
+					<p>Likvidin demokratian tutkintaan ja sen käyttöön pitäisi panostaa enemmän.<br>
+					Yksi esimerkki voisi olla kansalaisaloitteen verkkosivuston käyttö, jossa ihmiset voivat joko äänestää suoraan tai antaa äänensä toiselle henkilölle.</p>
+					<h2>Mikä se on?</h2>
+					<p>Likvidi demokratia (Englanniksi liquid democracy) on demokratian muoto, jossa jokaisella on äänioikeus päätöksissä, he voivat joko äänestää suoraan päätöksissä tai antaa äänensä toiselle henkilölle/puolueelle.</p>
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ya1dNNzkQTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+				<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+					<tr style="height:1vw">
+						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:91%"><h2 style="text-align: left">1.1.2 Äänestäminen</h2></th>
+						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					</tr>
+				</table>
+				<div class="closed">
+					<p>Likvididemokratian tapaan meidän tulisi tutkia vaihtoehtoisia äänestysmenetelmiä ja niiden hyödyntämistä.</p>
+					<iframe width="295" height="525" src="https://www.youtube-nocookie.com/embed/b2zwQp8AlYQ" title="Ranked Choice Voting Explained in Less than One Minute #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<iframe width="295" height="525" src="https://www.youtube-nocookie.com/embed/L1V8Vh-F2no" title="Approval Voting Explained in Less than One Minute #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<iframe width="295" height="525" src="https://www.youtube-nocookie.com/embed/Zy86WYmHvMk" title="STAR Voting Explained in Less than One Minute #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">1.3 Armeija</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Valtion tulee joko tehdä armeijan asevelvollisuus vapaaehtoiseksi tai tehdä asevelvollisuuden pakolliseksi jokaiselle sukupuoli-identiteetistä riippumatta.</p>
+			</div>
+			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">1.4 EU</h2></th>
+					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S3MGcBi0Org" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</div>
+	</article>
+	<article id="part2">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">2 Ekonomia</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+					<tr style="height:1vw">
+						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:91%"><h2 style="text-align: left">2.1 Verotus</h2></th>
+						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					</tr>
+			</table>
+			<div class="closed">
+				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+					<tr style="height:1vw">
+						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:91%"><h2 style="text-align: left">2.1.1 Verojen kohdentaminen</h2></th>
+						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					</tr>
+				</table>
+				<div class="closed">
+					<p>Valtio voisi luoda järjestelmän jossa voi jakaa mihin osa veroistasi menee, jotta et rahoittaisi ohjelmia joista et ole samaa mieltä.</p>
+					<p><a href="https://www.veronmaksajat.fi/luvut/Tilastot/Verotuotot/" target="_blank">Verotulot</a><br>
+					<a href="https://www.veronmaksajat.fi/luvut/Tilastot/Julkiset-menot/Veroeurojen-kaytto/" target="_blank">Veroeurojen kayttö</a></p>
+				</div>
+				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+					<tr style="height:1vw">
+						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:91%"><h2 style="text-align: left">2.1.2 Verotettavat lähteet</h2></th>
+						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					</tr>
+				</table>
+				<div class="closed">
+					<p>Ehdottomasti: Tulovero</p>
+					<p>Tarpeeton: Lahjavero</p>
+					<p>Perintövero?<br>
+					Toisaalta ihmisten ei pitäisi hyötyä suunnattomasti perimisestä, mutta ihmisiä ei pidä verottaa hulluja summia siitä, että he antavat muille rahaa.</p>
+				</div>
+				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+					<tr style="height:1vw">
+						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:91%"><h2 style="text-align: left">2.1.3 Vastalause verotus on varkaukselle</h2></th>
+						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					</tr>
+				</table>
+				<div class="closed">
+					<p>Oma mielipiteeni aiheesta "Verotus on varkaus":<br>
+					Ei se näin ole, maksat tärkeistä palveluista, joita kaikki asukkaat käyttävät, mukaan lukien sinä.<br>
+					Toivon järjestelmää, jossa jos et maksa veroja, menetät oikeuden julkisiin palveluihin ja/tai joudut maksamaan omasta pussistasi.<br>
+					Voisi myös olla järjestelmä, jossa voisi jakaa mihin osa veroistasi menee, jotta et rahoittaisi ohjelmia, joista et ole samaa mieltä. (katso kohta "2.1.1 Verojen kohdentaminen")</p>
+				</div>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+					<tr style="height:1vw">
+						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+						<th style="width:91%"><h2 style="text-align: left">2.2 Markkinoiden vapaudet</h2></th>
+						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					</tr>
+			</table>
+			<div class="closed">
+				<p>Niin kauan kuin yrityksiä johdetaan demokraattisesti ja huolehditaan työntekijöistä ja kuluttajista kaikki on OK.</p>
+			</div>
+		</div>
+	</article>
+	<article id="part3">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">3 Yksityisyys ja yksilönvapaudet</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">3.1 Yksilönvapaudet</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Vapauksia tulee rajoittaa vain silloin, kun se on tarpeen muiden henkilöiden vapauksien ja oikeuksien suojelemiseksi.<br>
+				Yksilönvapauksiin kuuluu itsemääräämisoikeus silloinkin, kun se voisi vahingoittaa henkilön omaa hyvinvointia.<br>
+				Olisi ryhdyttävä toimiin byrokratian ja hallituksen valvonnan vähentämiseksi, jotta ihmisillä olisi enemmän vapautta elämässä.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">3.2 Sananvapaus</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Sananvapaus, jopa epäsuosittu puhe tulee sallia, kunhan se ei loukkaa muiden vapauksia.<br>
+				Yksittäiset palvelut voivat rajoittaa näitä oikeuksia, koska ne ovat yksityisiä palveluita.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">3.3 Yksityisyys</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Yksityisyyden loukkauksia ovat esimerkiksi tunkeutuminen muiden ajatuksiin, mielipiteisiin, uskomuksiin, ihmissuhteisiin ja elämäntapoihin.<br>
+				Pienimpienkin yksityisyyden suojan rajoitusten on oltava erittäin hyvin perusteltuja.<br>
+				Valtion kansalaisten valvonta johtaa väistämättä väärinkäytöksiin, eikä sille ole perusteita vapaassa yhteiskunnassa.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">3.4 Yhdenvertainen oikeusturva</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Yksityishenkilöllä tulee olla oikeus saada oikeussuojaa taloudellisesta tilanteestaan riippumatta.<br>
+				Jokaisella, jota viranomainen on väärinkohdellut, on oltava oikeus kohtuulliseen korvaukseen ilman oikeudenkäyntitaakkaa.<br>
+				Lainsäädännön tehtävänä ei ole tehdä kansalaisista eriarvoisia, vaan kaikkien tulee olla tasa-arvoisia lain edessä.<br>
+				Kansalaisten tasa-arvoa voidaan toteuttaa tavalla poistamalla ihmisten jakaminen eri ryhmiin.</p>
+			</div>
+		</div>
+	</article>
+	<article id="part4">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">4 Tasa-arvo</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<p>Sosiaali Mutualistit uskovat radikaaliin tasa-arvoon, jossa kaikkia kohdellaan oikeudenmukaisesti, kun on kyse:<br>
+			sukupuoli, ikä, alkuperä, kansalaisuus, kieli, uskonto, vakaumus, mielipide, poliittinen toiminta, ammattiyhdistystoiminta,<br>
+			perhesuhteet, terveydentila, vamma, seksuaalinen suuntautuminen tai muu henkilöön liittyvä syy.</p>
+			<p>Valtion...<br>
+			- Pitää toimia niin, että se kunnioittaa kaikkia biologisia sukupuolia ja sukupuoli-identiteetin monimuotoisuutta.<br>
+			- Ei tarvitse tietää henkilön sukupuolta ja siksi se tulee poistaa henkilörekisteristä.<br>
+			- Armeijan asevelvollisuudesta tulee joko tehdä valinnainen tai tehdä asevelvollisuus pakolliseksi kaikille sukupuolesta riippumatta.<br>
+			- Tulee antaa vanhempainvapaata tasapuolisesti molemmille/kaikille huoltajille.<br>
+			- Ei saa antaa kohdella paremmin tiettyjä uskontoja.</p>
+		</div>
+	</article>
+	<article id="part5">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">5 Oikeudet</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">5.1 Tiedon saatavuus</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Koulutuksen ja tiedon tulee olla vapaasti kaikkien kiinnostuneiden saatavilla.<br>
+				Verovaroilla tuotetun tieteellisen tutkimuksen tulee olla veronmaksajien saatavilla.<br>
+				Meidän on purettava rakenteet, jotka johtavat maksamiseen ensin tutkimuksesta, sitten sen julkaisemisesta ja lopulta sen lukemisesta.<br>
+				Kustannusalustoille nyt ohjatut rahat voitaisiin käyttää itse tutkimukseen.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">5.2 Tekijänoikeusuudistus</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Miksi sinun täytyy saada voittoa yli 70 vuotta vanhasta sisällöstä, jota voitaisiin sen sijaan käyttää uudelleen ja miksata arvokkaammaksi?<br>
+				Ehdotan, että sisältö julkaistaan public domainiin (vapaakäyttöön) 30-40 vuoden kuluttua luomispäivästä.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">5.3 Digitalization</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Tyhjä</p>
+				<p>Jotain ihmisten oikeuksien vahvistamisesta digitaalisilla palveluilla</p>
+			</div>
+		</div>
+	</article>
+	<article id="part6">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">6 Turvallisuus</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">6.1 Terrorismin torjunta</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Yksilöiden yksityisyyden rikkominen (kuten kohdassa 3.3 todetaan) terrorismin ehkäisykeinona ei ole tehokasta.<br>
+				*kirjoita tänne lisää hyvistä vaihtoehdoista*</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">6.2 Poliisi ja palokunta</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+			</table>
+			<div class="closed">
+				<p>Poliisivoimat ja palokunta tulee organisoida paikallistasolla ja asettaa vaihtuva hallitus yleishyödyn varmistamiseksi.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">6.3 Asevalvontalaki</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Suomen nykyinen asevalvonta on riittävä.<br>
+				Meidän pitäisi sallia yksilöiden kantaa aseita vapaa-ajan ja/tai villieläinten metsästys syistä,<br>
+				vahvoilla taustatarkistuksilla ja väärinkäytösten ilmoitusjärjestelmällä.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">6.4 Liikenne</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Tyhjä</p>
+				<p>Jotain henkilökohtaisen riskien ottamisesta, ei valvontaa</p>
+			</div>
+		</div>
+	</article>
+	<article id="part7">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">7 Sosiaaliset järjestelmät</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">7.1 Perustulo</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Perustulo on tarpeellinen, kun suunnataan kohti automaatiota ja henkilökohtaisten vapauksien tulevaisuutta.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">7.2 Terveydenhuolto</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Ilmainen terveydenhuolto on ihmisoikeus.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">7.3 Huumeongelmat</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Huumeongelmat tulisi hoitaa terveydenhuollon toimesta riippuvuuden hoitona sen sijaan, että kaikkia huumeiden käyttäjiä rangaistaan pidättämällä.<br>
+				Huumeidenkäyttöhuoneita tulisi perustaa, joissa lääkäri tai vastaavasti erikoistunut henkilökunta seuraa asiakkaan huumeiden käyttöä ja suosittelee mahdollisia hoitopolkuja huumeongelmiin.</p>
+			</div>
+		</div>
+	</article>
+	<article id="part8">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">8 Työllisyys ja opiskelu</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<p>Työn alla...</p>
+			<p>Jotain työpaikkademokratian laajentamisesta ja työharjoittelusta.</p>
+		</div>
+	</article>
+	<article id="part9">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">9 Energia ja ympäristö</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">9.1 Ydin- ja uusiutuva energia</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Priorisoidaan ydinvoimaa, kunnes uusiutuvan energian tuotanto kehittyy siihen pisteeseen, että se tuottaa kaiken tarvittavan energian.<br>
+				Ydinvoima ei ole idioottivarma, mutta se vahingoittaa paljon vähemmän ihmisiä kuin dinojuomat.<br>
+				Yksilöiden ei pitäisi joutua syntipukkiin tekemään "vihreämpiä" päätöksiä.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">9.2 Suojellaan luontoa</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>En tiedä miksi lisäsin.<br>
+				Lisään myöhemmin ehkä jotain Elokapinan tyyppistä.</p>
+			</div>
+		</div>
+	</article>
+	<article id="part10">
+		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
+			<tr style="height:1vw">
+				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+				<th style="width:91%"><h2 style="text-align: left">10 Muut</h2></th>
+				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			</tr>
+		</table>
+		<div class="closed">
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr style="height:1vw">
+					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
+					<th style="width:91%"><h2 style="text-align: left">10.1 Historialliset muistomerkit</h2></th>
+					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Jos kansalaisten enemmistö äänestää historiallisen muistomerkin julkista esillepanoa vastaan, muistomerkki tulee siirtää museoon, ei tuhota.</p>
+			</div>
+		</div>
+	</article>
+</body>
+</html>
