@@ -4,128 +4,10 @@
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
 	<title>Social Mutualism</title>
-	<link rel="icon" type="image/x-icon" href="icon.png">
-	<script>
-	function toggleSect(sect)
-	{
-		var sib = sect.nextElementSibling;
-		var icon = sect.querySelector('.sectI');
-		if(sib.className=="closed")
-		{
-			sib.className="open";
-			icon.src="minus.png"
-		}
-		else
-		{
-			sib.className="closed";
-			icon.src="plus.png"
-		}
-	}
-	</script>
+	<link href="icon.png" rel="icon" type="image/x-icon">
 	<link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
-	<style>
-	html
-	{
-		overflow: -moz-scrollbars-vertical; 
-		overflow-y: scroll;
-	}
-
-	body
-	{
-		font-family: 'Anonymous Pro';
-		background: rgb(255,94,94);
-		background: -moz-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background: -webkit-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background: linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background-attachment: fixed;
-	}
-	
-	h1
-	{
-		font-size: 3vh;
-	}
-	
-	h2
-	{
-		font-size: 1.9vh;
-	}
-	
-	p
-	{
-		font-size: 1.8vh;
-	}
-	
-	#languages
-	{
-		position: fixed;
-	}
-
-	header
-	{
-		text-align: center;
-	}
-
-	.sect
-	{
-		cursor: pointer;
-		-webkit-touch-callout: none; /* iOS Safari */
-		-webkit-user-select: none; /* Safari */
-		-khtml-user-select: none; /* Konqueror HTML */
-		-moz-user-select: none; /* Old versions of Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-		user-select: none; /* Chrome, Edge, Opera and Firefox */
-		margin: 0.5% 7%;
-		box-shadow: 0pt 3pt 0pt 0 black;
-		width: 86%;
-	}
-	
-	.inner
-	{
-		cursor: pointer;
-		-webkit-touch-callout: none; /* iOS Safari */
-		-webkit-user-select: none; /* Safari */
-		-khtml-user-select: none; /* Konqueror HTML */
-		-moz-user-select: none; /* Old versions of Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-		user-select: none; /* Chrome, Edge, Opera and Firefox */
-		margin: 0.5% 1%;
-		box-shadow: 0pt 3pt 0pt 0 black;
-		width: 100%;
-	}
-
-	.closed
-	{
-		visibility: hidden;
-		display: none;
-	}
-
-	.open
-	{
-		visibility: visible;
-		display: block;
-		margin: 0% 7%;
-		padding: 10px;
-		width: 84.5%;
-		clear: left;
-	}
-
-	embed
-	{
-		width: 90%;
-		height: 10%;
-	}
-
-	#0txt
-	{
-	  display: block;
-	  font-size: 1.17em;
-	  margin-top: 1em;
-	  margin-bottom: 1em;
-	  margin-left: 0;
-	  margin-right: 0;
-	  font-weight: bold;
-	}
-	</style>
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js"></script>
 </head>
 <body>
 	<div id="languages">
@@ -136,18 +18,18 @@
 	</div>
 	<header id="overview">
 		<h1>Social Mutualism</h1>
-		<img src="icon.png" width="150vmin">
+		<img src="icon.png" id="logo">
 		<h2>"Expand democracy even in the workplace!"</h2>
 	</header>
-	<article id="part0">
+	<article id="0Intro">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">0 Intro</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">0 Intro</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
-		<div class="closed">
+		<div class="closed" id="0content">
 			<p>Social Mutualism is a leftist libertarian ideology that advocates for:<br>
 			- More government transparency, (less government regulation) and simplifying hierarchical structures.<br>
 			- More local decision-making and decentralization with more direct democracy. (state laws)<br>
@@ -157,13 +39,13 @@
 			<br>
 			<p>Social Mutualism is influenced by:<br>Mutualism, Pirate Politics, Experimentalism, Gradualism,<br>Participatory democracy, Welfarism, Labor rights, Libertarian Socialism, Vikiism.</p>
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">0.1 What should we do?</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">0.1 What should we do?</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
-			<div class="closed">
+			<div class="closed" id="0.1content">
 				<p>1. UBI.<br>
 				2. push for more government transparency.<br>
 				3. start using alternative voting methods (ranking or grading). <a href="https://plato.stanford.edu/entries/voting-methods/" target="_blank">(more info at plato.stanford.edu)</a><br>
@@ -174,49 +56,50 @@
 				5. let people allocate where (part of) their taxes go?</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">0.2 Ideologies</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">0.2 Ideologies</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 16.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
-			<div class="closed">
+			<div class="closed" id="0.2content">
 				<p>Mutualism and Pirate politics are the main inspirations of Social Mutualist ideology.</p>
 				<h2>What is mutualism?</h2>
-				<p>Mutualism is a form of libertarian socialism that advocates for peoples ownership of companies (means of production) in co-operation with a free market.<br>
-				As a very anarchist ideology it also advocates for more bottom up decision making instead of top to bottom.</p>
+				<p>Mutualism is a libertarian/anarcho-socialist thought of ​​the labor movement, often associated with the anarchist Pierre-Joseph Proudhon.<br>
+				In general, mutualism is based on the theory of labor value, according to which the producer should receive full compensation corresponding to the amount of work for the product of work, anything else is considered exploitation.<br>
+				As a very anarchist ideology, it also advocates more bottom-up decision-making instead of top-down.</p>
 				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JUUEHv8GHcE?start=77&clip=Ugkxp3Uk8P-EGkveA8pqjZBiwPgNGWdEVH-7&clipt=EPDUBBj3jgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				<p><a href="https://en.wikipedia.org/wiki/Mutualism_(economic_theory)">Mutualism on Wikipedia</a></p>
 				<h2>What yarr pirate politics?</h2>
-				<p>Pirate politics come from Pirate Parties (a label adopted by political parties around the world.) which was created as a protest against media giants suing The Pirate Bay and individuals using it for pirating music and movies.<br>
+				<p>Pirate politics come from Pirate Parties (a label adopted by political parties around the world.) which was created as a protest against changes to copyright law.<br>
 				The pirates have spread into a larger center libertarian ideology of civil liberty, participatory democracy, privacy and internet freedoms.</p>
 				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NeMWRvzMxBU?start=70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				<p><a href="https://en.wikipedia.org/wiki/Pirate_Party">Pirate Party on Wikipedia</a></p>
 			</div>
 		</div>
 	</article>
-	<article id="part1">
+	<article id="1Government">
 		<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">1 Government</h2></th>
-				<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">1 Government</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">1.1 Participation</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">1.1 Participation</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">1.1.1 Liquid democracy</h2></th>
-						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">1.1.1 Liquid democracy</h2></th>
+						<th class="sectUpdated"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -227,10 +110,10 @@
 					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ya1dNNzkQTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 				<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">1.1.2 Voting</h2></th>
-						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">1.1.2 Voting</h2></th>
+						<th class="sectUpdated"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -242,20 +125,20 @@
 				</div>
 			</div>
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">1.3 Army</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">1.3 Army</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>The state must either make army conscription optional or make conscription mandatory to everyone regardless of their gender identity.</p>
 			</div>
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">1.4 EU</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">1.4 EU</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -263,28 +146,28 @@
 			</div>
 		</div>
 	</article>
-	<article id="part2">
+	<article id="2Economics">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">2 Economics</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">2 Economics</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1 Taxation</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1 Taxation</h2></th>
+						<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 			</table>
 			<div class="closed">
 				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1.1 Allocation of taxes</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1.1 Allocation of taxes</h2></th>
+						<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -295,10 +178,10 @@
 					<a href="https://www.veronmaksajat.fi/luvut/Tilastot/Julkiset-menot/Veroeurojen-kaytto/" target="_blank">List of finnish government services funded by taxes (in Finnish)</a></p>
 				</div>
 				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1.2 Taxable sources</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1.2 Taxable sources</h2></th>
+						<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -309,10 +192,10 @@
 					<p></p>
 				</div>
 				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1.3 On taxation is theft</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1.3 On taxation is theft</h2></th>
+						<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -323,10 +206,10 @@
 				</div>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.2 Freedoms of the market</h2></th>
-						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.2 Freedoms of the market</h2></th>
+						<th class="sectUpdated"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 			</table>
 			<div class="closed">
@@ -334,20 +217,20 @@
 			</div>
 		</div>
 	</article>
-	<article id="part3">
+	<article id="3PrivacyPersonal">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">3 Privacy and personal freedoms</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">3 Privacy and personal freedoms</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.1 Individual freedoms</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.1 Individual freedoms</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -356,10 +239,10 @@
 				<p>Steps should be taken towards reducing bureaucracy and government control to grant people more freedom in their lives.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.2 Freedom of speech</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.2 Freedom of speech</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -368,10 +251,10 @@
 				<p>Individual services may limit these rights, as they are private services.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.3 Individuals right to privacy</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.3 Individuals right to privacy</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -380,10 +263,10 @@
 				<p>State surveillance of citizens inevitably leads to abuses, and there is no basis for it in a free society.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.4 Equality of legal protection</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.4 Equality of legal protection</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -394,12 +277,12 @@
 			</div>
 		</div>
 	</article>
-	<article id="part4">
+	<article id="4Equality">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">4 Equality</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">4 Equality</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
@@ -414,20 +297,20 @@
 			- Must not give preferential treatment to certain religions.</p>
 		</div>
 	</article>
-	<article id="part5">
+	<article id="5Rights">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">5 Rights</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">5 Rights</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">5.1 Access to information</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">5.1 Access to information</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -437,10 +320,10 @@
 				The money that is now directed to publishing platforms could be used for research.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">5.2 Copyright reform</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">5.2 Copyright reform</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -449,10 +332,10 @@
 				<p>I propose content to be released into the public domain 30-40 years from creation date.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">5.3 Digitalization</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">5.3 Digitalization</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -461,20 +344,20 @@
 			</div>
 		</div>
 	</article>
-	<article id="part6">
+	<article id="6Safety">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">6 Safety</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">6 Safety</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">6.1 Anti-terrorism</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">6.1 Anti-terrorism</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -482,20 +365,20 @@
 				<p>*write more stuff about good alternatives here*</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">6.2 Police and fire department</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">6.2 Police and fire department</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 			</table>
 			<div class="closed">
 				<p>The police force and fire department should be organized at a local level, having a changing board of directors to ensure public benefit.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">6.3 Gun control</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">6.3 Gun control</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -504,10 +387,10 @@
 				with strong background checks and misuse reporting system.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">6.4 Traffic</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">6.4 Traffic</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -516,40 +399,40 @@
 			</div>
 		</div>
 	</article>
-	<article id="part7">
+	<article id="7SocialSys">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">7 Social systems</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">7 Social systems</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">7.1 Basic income</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">7.1 Basic income</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>Universal basic income is a requirement heading into the future of automation and personal freedoms.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">7.2 Healthcare</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">7.2 Healthcare</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>Free healthcare is a human right.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">7.3 Drug abuse</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">7.3 Drug abuse</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -558,12 +441,12 @@
 			</div>
 		</div>
 	</article>
-	<article id="part8">
+	<article id="8EmploymentEdu">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">8 Employment and education</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">8 Employment and education</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
@@ -571,32 +454,33 @@
 			<p>Something about expanding workplace democracy and work training</p>
 		</div>
 	</article>
-	<article id="part9">
+	<article id="9EnergyClimate">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">9 Energy and climate</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">9 Energy and climate</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">9.1 Nuclear and renewable energy</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">9.1 Nuclear and renewable energy</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
-				<p>Prioritize nuclear power until renewable technology improves to the point it outputs all the energy needed.</p>
-				<p>Nuclear power isn't fool proof but it harms way less people than the dinosaur fuels.</p>
-				<p>Individuals should not be scape goated into making "greener" decisions.</p>
+				<p>Prioritize nuclear power until renewable technology improves to the point it outputs all the energy needed.<br>
+				Nuclear power harms way less people than the dino juices.<br>
+				It is necessary to become carbon neutral and free from fossil fuels as soon as possible.<br>
+				Individuals should not be scape goated into making "greener" decisions.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">9.2 Protect nature</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">9.2 Protect nature</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -605,20 +489,34 @@
 			</div>
 		</div>
 	</article>
-	<article id="part10">
+	<article id="10Other">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">10 Other</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">10 Other</h2></th>
+				<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">10.1 Historical monuments</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">10.1 Food waste</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 16.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>To minimize food waste we should encourage food producers to discount or give away any food that would otherwise go to waste.<br>
+				Schools and other public institutions should give away food to take home and/or sell it to non-members at a low cost.<br>
+				Restaurants should give workers the opportunity to take home food that would otherwise go to waste and/or sell it to customers at a discount.<br>
+				Grocery stores should also discount food waste with a discount basket or membership discounts.<br>
+				An extra example is to give the food waste to charities sharing food and giving to people who need it the most.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">10.1 Historical monuments</h2></th>
+					<th class="sectUpdated"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">

@@ -3,129 +3,11 @@
 <head>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
-	<title>Social Mutualism</title>
-	<link rel="icon" type="image/x-icon" href="icon.png">
-	<script>
-	function toggleSect(sect)
-	{
-		var sib = sect.nextElementSibling;
-		var icon = sect.querySelector('.sectI');
-		if(sib.className=="closed")
-		{
-			sib.className="open";
-			icon.src="minus.png"
-		}
-		else
-		{
-			sib.className="closed";
-			icon.src="plus.png"
-		}
-	}
-	</script>
+	<title>Sosiaali Mutualismi</title>
+	<link href="icon.png" rel="icon" type="image/x-icon">
 	<link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
-	<style>
-	html
-	{
-		overflow: -moz-scrollbars-vertical; 
-		overflow-y: scroll;
-	}
-
-	body
-	{
-		font-family: 'Anonymous Pro';
-		background: rgb(255,94,94);
-		background: -moz-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background: -webkit-linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background: linear-gradient(180deg, rgba(255,94,94,1) 10%, rgba(255,183,131,1) 50%);
-		background-attachment: fixed;
-	}
-	
-	h1
-	{
-		font-size: 3vh;
-	}
-	
-	h2
-	{
-		font-size: 1.9vh;
-	}
-	
-	p
-	{
-		font-size: 1.8vh;
-	}
-	
-	#languages
-	{
-		position: fixed;
-	}
-
-	header
-	{
-		text-align: center;
-	}
-
-	.sect
-	{
-		cursor: pointer;
-		-webkit-touch-callout: none; /* iOS Safari */
-		-webkit-user-select: none; /* Safari */
-		-khtml-user-select: none; /* Konqueror HTML */
-		-moz-user-select: none; /* Old versions of Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-		user-select: none; /* Chrome, Edge, Opera and Firefox */
-		margin: 0.5% 7%;
-		box-shadow: 0pt 3pt 0pt 0 black;
-		width: 86%;
-	}
-	
-	.inner
-	{
-		cursor: pointer;
-		-webkit-touch-callout: none; /* iOS Safari */
-		-webkit-user-select: none; /* Safari */
-		-khtml-user-select: none; /* Konqueror HTML */
-		-moz-user-select: none; /* Old versions of Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-		user-select: none; /* Chrome, Edge, Opera and Firefox */
-		margin: 0.5% 1%;
-		box-shadow: 0pt 3pt 0pt 0 black;
-		width: 100%;
-	}
-
-	.closed
-	{
-		visibility: hidden;
-		display: none;
-	}
-
-	.open
-	{
-		visibility: visible;
-		display: block;
-		margin: 0% 7%;
-		padding: 10px;
-		width: 84.5%;
-		clear: left;
-	}
-
-	embed
-	{
-		width: 90%;
-		height: 10%;
-	}
-
-	#0txt
-	{
-	  display: block;
-	  font-size: 1.17em;
-	  margin-top: 1em;
-	  margin-bottom: 1em;
-	  margin-left: 0;
-	  margin-right: 0;
-	  font-weight: bold;
-	}
-	</style>
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js"></script>
 </head>
 <body>
 	<div id="languages">
@@ -136,15 +18,15 @@
 	</div>
 	<header id="overview">
 		<h1>Sosiaali Mutualismi</h1>
-		<img src="icon.png" width="150vmin">
+		<img src="icon.png" id="logo">
 		<h2>"Laajennetaan demokratiaa jopa työpaikoilla!"</h2>
 	</header>
-	<article id="part0">
+	<article id="0Intro">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">0 Intro</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">0 Intro</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
@@ -155,10 +37,10 @@
 			Annetaan työntekijöiden äänestää bisnesasioista työpaikkademokratian kautta.</p>
 			<p>Sosiaali Mutualismiin on vaikuttanut mm.:<br>Mutualismi, Piraattiliike, Eksperimentalismi, Gradualismi,<br>Osallistava demokratia, Hyvinvointi, Työväenliike, Libertaarinen sosialismi, Vikiismi.</p>
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">0.1 Mitä kuuluisi tehdä?</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">0.1 Mitä kuuluisi tehdä?</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -172,50 +54,50 @@
 				5. annetaan ihmisten jaotella minne (osa) veroistaan menee?</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">0.2 Ideologies</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">0.2 Ideologiat</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 16.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>Mutualismi ja piraattiliike ovat sosiaalisen mutualismin ideologian tärkeimpiä inspiraatioita.</p>
 				<h2>Mitä on mutualismi?</h2>
-				<p>Mutualismi on työväenliikkeen poliittinen ja taloudellinen aate, joka usein liitetään anarkisti Pierre-Joseph Proudhoniin.<br>
-				Pääpiirteiltään mutualismi ajaa työarvoteoriaa, jonka mukaan tuottajan kuuluu saada työn tuotteesta täysi työn määrää vastaava korvaus, muuta pidetään riistona.<br>
+				<p>Mutualismi on libertaari/anarkososialistinen työväenliikkeen aate, joka usein liitetään anarkisti Pierre-Joseph Proudhoniin.<br>
+				Pääpiirteiltään mutualismi perustuu työarvoteoriaan, jonka mukaan tuottajan kuuluu saada työn tuotteesta täysi työn määrää vastaava korvaus, muuta pidetään riistona.<br>
 				Hyvin anarkistisena ideologiana se myös kannattaa enemmän alhaalta ylöspäin suuntautuvaa päätöksentekoa ylhäältä alaspäin sijasta.</p>
 				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JUUEHv8GHcE?start=77&clip=Ugkxp3Uk8P-EGkveA8pqjZBiwPgNGWdEVH-7&clipt=EPDUBBj3jgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				<p><a href="https://fi.wikipedia.org/wiki/Mutualismi">Mutualismista Wikipediassa</a></p>
 				<h2>Mikä on piraattiliike?</h2>
-				<p>Piraattiliike tulee Piraattipuolueilta (maailmanlaajuinen puolueiden omistama kutsumanimi), joka luotiin protesti puolueeksi Pirate Bayn oikeidenkäynnin ohella.<br>
+				<p>Piraattiliike tulee Piraattipuolueilta (maailmanlaajuinen puolueiden omistama kutsumanimi), joka luotiin protestiksi tekijänoikeus muutoksia vastaan.<br>
 				Nykyään piraattipuolueet ovat laajentuneet kansalaisvapauksien, osallistavan demokratian, yksityisyyden ja internetin vapauksien teemoille.</p>
 				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H9pbHn8vaA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				<p><a href="https://fi.wikipedia.org/wiki/Piraattipuolue">Piraattipuolueesta Wikipediassa</a></p>
 			</div>
 		</div>
 	</article>
-	<article id="part1">
+	<article id="1Government">
 		<table onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">1 Hallinto</h2></th>
-				<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">1 Hallinto</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">1.1 Osallisuus</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">1.1 Osallisuus</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">1.1.1 Likvidi demokratia</h2></th>
-						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">1.1.1 Likvidi demokratia</h2></th>
+						<th class="sectUpdated"><h2 title="Päivitetty: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -226,10 +108,10 @@
 					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ya1dNNzkQTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 				<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">1.1.2 Äänestäminen</h2></th>
-						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">1.1.2 Äänestäminen</h2></th>
+						<th class="sectUpdated"><h2 title="Päivitetty: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -240,20 +122,20 @@
 				</div>
 			</div>
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">1.3 Armeija</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">1.3 Armeija</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>Valtion tulee joko tehdä armeijan asevelvollisuus vapaaehtoiseksi tai tehdä asevelvollisuuden pakolliseksi jokaiselle sukupuoli-identiteetistä riippumatta.</p>
 			</div>
 			<table onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">1.4 EU</h2></th>
-					<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">1.4 EU</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -261,28 +143,28 @@
 			</div>
 		</div>
 	</article>
-	<article id="part2">
+	<article id="2Economics">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">2 Ekonomia</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">2 Ekonomia</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1 Verotus</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1 Verotus</h2></th>
+						<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 			</table>
 			<div class="closed">
 				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1.1 Verojen kohdentaminen</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1.1 Verojen kohdentaminen</h2></th>
+						<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -291,10 +173,10 @@
 					<a href="https://www.veronmaksajat.fi/luvut/Tilastot/Julkiset-menot/Veroeurojen-kaytto/" target="_blank">Veroeurojen kayttö</a></p>
 				</div>
 				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1.2 Verotettavat lähteet</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1.2 Verotettavat lähteet</h2></th>
+						<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -304,10 +186,10 @@
 					Toisaalta ihmisten ei pitäisi hyötyä suunnattomasti perimisestä, mutta ihmisiä ei pidä verottaa hulluja summia siitä, että he antavat muille rahaa.</p>
 				</div>
 				<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.1.3 Vastalause verotus on varkaukselle</h2></th>
-						<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.1.3 Vastalause verotus on varkaukselle</h2></th>
+						<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 				</table>
 				<div class="closed">
@@ -318,10 +200,10 @@
 				</div>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-					<tr style="height:1vw">
-						<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-						<th style="width:91%"><h2 style="text-align: left">2.2 Markkinoiden vapaudet</h2></th>
-						<th style="width:5%"><h2 title="Updated: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+					<tr class="sectTable">
+						<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+						<th class="sectHeader"><h2 style="text-align: left">2.2 Markkinoiden vapaudet</h2></th>
+						<th class="sectUpdated"><h2 title="Päivitetty: 12.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 					</tr>
 			</table>
 			<div class="closed">
@@ -329,20 +211,20 @@
 			</div>
 		</div>
 	</article>
-	<article id="part3">
+	<article id="3PrivacyPersonal">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">3 Yksityisyys ja yksilönvapaudet</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">3 Yksityisyys ja yksilönvapaudet</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.1 Yksilönvapaudet</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.1 Yksilönvapaudet</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -351,10 +233,10 @@
 				Olisi ryhdyttävä toimiin byrokratian ja hallituksen valvonnan vähentämiseksi, jotta ihmisillä olisi enemmän vapautta elämässä.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.2 Sananvapaus</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.2 Sananvapaus</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -362,10 +244,10 @@
 				Yksittäiset palvelut voivat rajoittaa näitä oikeuksia, koska ne ovat yksityisiä palveluita.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.3 Yksityisyys</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.3 Yksityisyys</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -374,10 +256,10 @@
 				Valtion kansalaisten valvonta johtaa väistämättä väärinkäytöksiin, eikä sille ole perusteita vapaassa yhteiskunnassa.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">3.4 Yhdenvertainen oikeusturva</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">3.4 Yhdenvertainen oikeusturva</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -388,12 +270,12 @@
 			</div>
 		</div>
 	</article>
-	<article id="part4">
+	<article id="4Equality">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">4 Tasa-arvo</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">4 Tasa-arvo</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
@@ -408,20 +290,20 @@
 			- Ei saa antaa kohdella paremmin tiettyjä uskontoja.</p>
 		</div>
 	</article>
-	<article id="part5">
+	<article id="5Rights">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">5 Oikeudet</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">5 Oikeudet</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">5.1 Tiedon saatavuus</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">5.1 Tiedon saatavuus</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -431,10 +313,10 @@
 				Kustannusalustoille nyt ohjatut rahat voitaisiin käyttää itse tutkimukseen.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">5.2 Tekijänoikeusuudistus</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">5.2 Tekijänoikeusuudistus</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -442,10 +324,10 @@
 				Ehdotan, että sisältö julkaistaan public domainiin (vapaakäyttöön) 30-40 vuoden kuluttua luomispäivästä.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">5.3 Digitalization</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">5.3 Digitalization</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -454,20 +336,20 @@
 			</div>
 		</div>
 	</article>
-	<article id="part6">
+	<article id="6Safety">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">6 Turvallisuus</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">6 Turvallisuus</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">6.1 Terrorismin torjunta</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">6.1 Terrorismin torjunta</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -475,20 +357,20 @@
 				*kirjoita tänne lisää hyvistä vaihtoehdoista*</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">6.2 Poliisi ja palokunta</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">6.2 Poliisi ja palokunta</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 			</table>
 			<div class="closed">
 				<p>Poliisivoimat ja palokunta tulee organisoida paikallistasolla ja asettaa vaihtuva hallitus yleishyödyn varmistamiseksi.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">6.3 Asevalvontalaki</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">6.3 Asevalvontalaki</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -497,10 +379,10 @@
 				vahvoilla taustatarkistuksilla ja väärinkäytösten ilmoitusjärjestelmällä.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">6.4 Liikenne</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">6.4 Liikenne</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -509,40 +391,40 @@
 			</div>
 		</div>
 	</article>
-	<article id="part7">
+	<article id="7SocialSys">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">7 Sosiaaliset järjestelmät</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">7 Sosiaaliset järjestelmät</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">7.1 Perustulo</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">7.1 Perustulo</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>Perustulo on tarpeellinen, kun suunnataan kohti automaatiota ja henkilökohtaisten vapauksien tulevaisuutta.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">7.2 Terveydenhuolto</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">7.2 Terveydenhuolto</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>Ilmainen terveydenhuolto on ihmisoikeus.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">7.3 Huumeongelmat</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">7.3 Huumeongelmat</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -551,12 +433,12 @@
 			</div>
 		</div>
 	</article>
-	<article id="part8">
+	<article id="8EmploymentEdu">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">8 Työllisyys ja opiskelu</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">8 Työllisyys ja opiskelu</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
@@ -564,32 +446,33 @@
 			<p>Jotain työpaikkademokratian laajentamisesta ja työharjoittelusta.</p>
 		</div>
 	</article>
-	<article id="part9">
+	<article id="9EnergyClimate">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">9 Energia ja ympäristö</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">9 Energia ja ympäristö</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">9.1 Ydin- ja uusiutuva energia</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">9.1 Ydin- ja uusiutuva energia</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 16.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
 				<p>Priorisoidaan ydinvoimaa, kunnes uusiutuvan energian tuotanto kehittyy siihen pisteeseen, että se tuottaa kaiken tarvittavan energian.<br>
-				Ydinvoima ei ole idioottivarma, mutta se vahingoittaa paljon vähemmän ihmisiä kuin dinojuomat.<br>
-				Yksilöiden ei pitäisi joutua syntipukkiin tekemään "vihreämpiä" päätöksiä.</p>
+				Ydinvoima vahingoittaa paljon vähemmän ihmisiä kuin dinojuomat.<br>
+				Hiilineutraaliksi ja fossiilisista polttoaineista vapaaksi pitää päästä mahdollisimman pian.<br>
+				Yksilöiden ei pitäisi joutua syntipukiksi tekemään "vihreämpiä" päätöksiä.</p>
 			</div>
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">9.2 Suojellaan luontoa</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">9.2 Suojellaan luontoa</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 16.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">
@@ -598,20 +481,34 @@
 			</div>
 		</div>
 	</article>
-	<article id="part10">
+	<article id="10Other">
 		<table  onclick="toggleSect(this)" class="sect" style="line-height: 0px">
-			<tr style="height:1vw">
-				<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-				<th style="width:91%"><h2 style="text-align: left">10 Muut</h2></th>
-				<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+			<tr class="sectTable">
+				<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+				<th class="sectHeader"><h2 style="text-align: left">10 Muut</h2></th>
+				<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 			</tr>
 		</table>
 		<div class="closed">
 			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
-				<tr style="height:1vw">
-					<th style="width:4%"><img class="sectI" width="25vw" src="plus.png"></img></th>
-					<th style="width:91%"><h2 style="text-align: left">10.1 Historialliset muistomerkit</h2></th>
-					<th style="width:5%"><h2 title="Updated: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">10.1 Ruoka hävikki</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 16.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
+				</tr>
+			</table>
+			<div class="closed">
+				<p>Ruokahävikin vähentämiseksi meidän tulisi kannustaa ruoantuottajia alenntamaan tai lahjoittamaan ruokaa, joka muuten menisi hukkaan.<br>
+				- Koulujen ja muiden julkisten laitosten tulisi antaa ruokaa kotiin vietäväksi ja/tai myydä se ei-jäsenille edulliseen hintaan.<br>
+				- Ravintoloiden tulisi antaa työntekijöille mahdollisuus viedä kotiin muutoin roskiin menevää ruokaa ja/tai myydä se asiakkaille alennuksella.<br>
+				- Ruokakaupoilla tulisi myös alentaa huonoksi meviä tarpeita alennuskorilla tai jäsenalennuksilla.<br>
+				Hyvä esimerkki on antaa ruokahävikki hyväntekeväisyysjärjestöille, jotka jakavat ruokaa ja antavat sitä eniten tarvitseville.</p>
+			</div>
+			<table  onclick="toggleSect(this)" class="inner" style="line-height: 0px">
+				<tr class="sectTable">
+					<th class="sectIcon"><img class="sectI" width="25vw" src="plus.svg"></img></th>
+					<th class="sectHeader"><h2 style="text-align: left">10.1 Historialliset muistomerkit</h2></th>
+					<th class="sectUpdated"><h2 title="Päivitetty: 11.03.2023" style="text-align: center; color:green;">&#x2714;</h2></th>
 				</tr>
 			</table>
 			<div class="closed">

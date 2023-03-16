@@ -1,3 +1,4 @@
+reword intro and ideologies
 fix self references
 add missing sections such as 1.2 Transparency of government, 2.3 Forms of business, 3.5 Immigration
 add about healthcare
