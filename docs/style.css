@@ -85,6 +85,18 @@ hr
 	width:4%;
 }
 
+.checkmark
+{
+	text-align: center;
+	color:green;
+}
+
+.xmark
+{
+	text-align: center;
+	color:red;
+}
+
 .sectHeader
 {
 	width:91%;
