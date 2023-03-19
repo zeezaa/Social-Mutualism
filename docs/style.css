@@ -127,10 +127,29 @@ hr
 	padding: 10px;
 	width: 84.5%;
 	clear: left;
+	-webkit-animation: open 0.3s normal forwards;
+	-moz-animation: open 0.3s normal forwards;
+    animation: open 0.3s normal forwards;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
 }
 
 embed
 {
 	width: 90%;
 	height: 10%;
+}
+
+@-webkit-keyframes open {
+	from { transform: scaleY(0) }
+	to { transform: scaleY(1) }
+}
+@-moz-keyframes open {
+	from { transform: scaleY(0) }
+	to { transform: scaleY(1) }
+}
+@keyframes open {
+	from { transform: scaleY(0) }
+	to { transform: scaleY(1) }
 }
