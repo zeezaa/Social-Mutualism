@@ -1,13 +1,29 @@
 function checkDates()
 {
-	var checks = document.getElementsByClassName('checkmark');
+	var today = Date.now();
+	var checks = document.querySelectorAll('.loadmark');
 	for(var i = 0; i < checks.length; ++i)
 	{
-		var ISO = new Date(checks[i].dataset.modified);
-		var today = new Date();
-		if(today.getTime() > ISO.getTime() + 1209600000) //2 weeks in ms
+		var ISO = new Date(checks.item(i).dataset.modified);
+		var ISOms = ISO.getTime();
+		if(today - ISOms < 432000000) //5 days
 		{
-			checks[i].innerHTML="&#x2718;";
+			checks[i].innerHTML="NEW ★";
+			checks[i].className="newmark";
+		}
+		else if(today - ISOms < 1209600000) //2 weeks
+		{
+			checks[i].innerHTML="OK ✔";
+			checks[i].className="checkmark";
+		}
+		else if(today - ISOms < 2629746000) //1 month
+		{
+			checks[i].innerHTML="OLD ✘";
+			checks[i].className="xmark";
+		}
+		else
+		{
+			checks[i].innerHTML="DED 💀";
 			checks[i].className="xmark";
 		}
 	}
@@ -26,4 +42,5 @@ function toggleSect(sect)
 		sib.className="closed";
 		sect.querySelector('.sectI').src="plus.svg";
 	}
+	dcheckDates(sect);
 }

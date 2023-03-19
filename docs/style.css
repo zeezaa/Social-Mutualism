@@ -85,6 +85,12 @@ hr
 	width:4%;
 }
 
+.newmark
+{
+	text-align: center;
+	color:blue;
+}
+
 .checkmark
 {
 	text-align: center;
@@ -99,17 +105,12 @@ hr
 
 .sectHeader
 {
-	width:91%;
+	width:76%;
 }
 
 .sectUpdated
 {
-	width:5%;
-}
-
-.sectTable
-{
-	height:1vw;
+	width:10%;
 }
 
 .closed
