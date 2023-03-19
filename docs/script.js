@@ -43,3 +43,11 @@ function toggleSect(sect)
 		sect.querySelector('.sectI').src="plus.svg";
 	}
 }
+
+function loadvid(thumb)
+{
+	var frame = thumb.nextElementSibling;
+	frame.src = frame.dataset.ytid;
+	frame.style.display = "";
+	thumb.remove();
+}
