@@ -42,5 +42,4 @@ function toggleSect(sect)
 		sib.className="closed";
 		sect.querySelector('.sectI').src="plus.svg";
 	}
-	dcheckDates(sect);
 }
