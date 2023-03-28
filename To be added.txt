@@ -1,4 +1,3 @@
-fix self references
 Healthcare
 add missing sections such as 1.2 Transparency of government, 2.3 Forms of business, 3.5 Immigration
 sources for heavily copied texts
