@@ -11,12 +11,12 @@ function checkDates()
 			checks[i].innerHTML="NEW ★";
 			checks[i].className="newmark";
 		}
-		else if(today - ISOms < 1209600000) //2 weeks
+		else if(today - ISOms < 2629800000) //1 month
 		{
 			checks[i].innerHTML="OK ✔";
 			checks[i].className="checkmark";
 		}
-		else if(today - ISOms < 2629746000) //1 month
+		else if(today - ISOms < 15778800000) //6 months
 		{
 			checks[i].innerHTML="OLD ✘";
 			checks[i].className="xmark";
