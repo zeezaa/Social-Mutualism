@@ -6,7 +6,7 @@ function checkDates()
 	{
 		var ISO = new Date(checks.item(i).dataset.modified);
 		var ISOms = ISO.getTime();
-		if(today - ISOms < 432000000) //5 days
+		if(today - ISOms < 604800000) //7 days
 		{
 			checks[i].innerHTML="NEW ★";
 			checks[i].className="newmark";
